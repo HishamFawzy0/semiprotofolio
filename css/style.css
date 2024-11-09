@@ -1,0 +1,438 @@
+/* NAV-BAR */
+
+.my-nav {
+  background-color: rgba(255, 255, 255);
+}
+.my-nav .nav-item,
+.custom-nav li button {
+  position: relative;
+  margin-inline: 10px;
+}
+.my-nav .nav-item .nav-link::before,
+.custom-nav li button::before {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 2px;
+  bottom: 5px;
+  left: 5px;
+  background-color: black;
+  transition: width 0.3s;
+}
+.my-nav .nav-item .nav-link:hover::before,
+.custom-nav li button:hover::before {
+  width: 90%;
+}
+
+.my-nav .nav-item .active::before,
+.custom-nav li button.active::before {
+  position: absolute;
+  content: "";
+  width: 90%;
+  height: 2px;
+  bottom: 5px;
+
+  left: 5px;
+  background-color: black;
+  transition: width 0.3s;
+}
+
+/* NAV-BAR */
+
+/* HOME SECTION */
+
+.Home {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6) 0% 100%),
+    url(../imgs/bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 0px 0px;
+  background-attachment: scroll;
+  height: 100vh;
+  background-size:cover ;
+}
+.Home h5 {
+  font-family: "Montserrat", serif;
+  font-weight: 800;
+  font-size: 3.125rem;
+  line-height: 55px;
+}
+.I-am {
+  font-family: "Montserrat", serif;
+  font-weight: 200;
+  font-size: 3.75rem;
+  line-height: 72px;
+}
+.xxx {
+  font-family: "Montserrat", serif;
+  font-size: 60px;
+}
+
+.Home .icons div {
+  width: 40px;
+  height: 40px;
+  margin: 5px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  transition: 0.3s;
+  color: white;
+  font-size: 15px;
+  margin: 5px;
+}
+
+/* HOME SECTION */
+
+/* about Section */
+.about .dot-img img {
+  width: 70%;
+}
+.about .dot-img {
+  position: relative;
+}
+.about .dot-img::before {
+  content: "";
+  width: 50%;
+  height: 70%;
+  position: absolute;
+  left: 60px;
+  bottom: -30px;
+  background-image: url(../imgs/dots.png);
+  background-repeat: repeat;
+  z-index: -1;
+}
+.about-content h3 {
+  font-family: "Montserrat", serif;
+  font-weight: 800;
+  font-size: 1.875rem;
+  line-height: 33px;
+  color: rgb(52, 52, 52);
+}
+.about-content h3 + span {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: rgb(153, 153, 153);
+}
+.about-content .content-para {
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  color: rgb(116, 129, 130);
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.about-content p span {
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  color: rgb(116, 129, 130);
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.prgrs .progress {
+  height: 25px;
+}
+
+.about-buttons .dd {
+  background-color: black;
+  color: white;
+  border: solid 1px black;
+  transition: all 0.5s;
+}
+.about-buttons .dd:hover {
+  background-color: white;
+  border: solid 1px black;
+  color: black;
+}
+
+.about-buttons .do {
+  background-color: white;
+  color: black;
+  border: solid 1px black;
+  transition: all 0.5s;
+}
+.about-buttons .do:hover {
+  background-color: black;
+  border: solid 1px black;
+  color: white;
+}
+/* about Section */
+
+/* Services SECTIOn */
+.Services {
+  background-color: #f7f7f7;
+}
+
+.header h3 {
+  position: relative;
+  font-family: "Montserrat", serif;
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 44px;
+  color: rgb(52, 52, 52);
+}
+
+.header h3::after {
+  content: "";
+  width: 20%;
+  height: 10px;
+  background-image: url(../imgs/dots.png);
+  background-repeat: repeat;
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  /* z-index: -1; */
+}
+
+.semi-card {
+  background-color: white;
+}
+.semi-card h6 {
+  font-family: "Montserrat", serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 20px;
+  color: rgb(52, 52, 52);
+}
+.semi-card p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: rgb(116, 129, 130);
+}
+.semi-card div {
+  width: 80px;
+  height: 80px;
+  background-color: #f4f4f4;
+  border-radius: 50%;
+  transition: all 0.5s;
+}
+.semi-card:hover div {
+  background-color: black;
+  color: white;
+}
+/* Services SECTIOn */
+
+/* Portfolio SECTION */
+
+.custom-nav li button {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  background-color: white !important;
+  color: black !important;
+}
+
+.card {
+  position: relative;
+  overflow: hidden;
+  transition: 0.3s;
+}
+.card-layer {
+  position: absolute;
+  inset: 10px;
+  background-color: rgba(255, 255, 255, 0.5);
+  opacity: 0;
+  transform: translateY(50px);
+  transition: 0.5s;
+}
+.card-layer h4 {
+  font-family: "Montserrat", serif;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 20px;
+  color: rgb(52, 52, 52);
+  transform: translateY(-30px);
+  transition: all 0.5s;
+}
+.card:hover .card-layer,
+.card:hover .card-layer h4 {
+  transform: translateY(0);
+  opacity: 1;
+}
+.card-layer .custom-icon {
+  width: 40px;
+  height: 40px;
+  margin: 5px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 1);
+  cursor: pointer;
+  transition: 0.3s;
+  color: white;
+  font-size: 15px;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+.card-layer .custom-icon:hover {
+  background-color: white;
+  border: solid 1px black;
+  color: black;
+}
+
+/* Portfolio SECTION */
+
+/* Testimonials SECTION */
+.Testimonials,
+.Team {
+  background-color: #f7f7f7;
+}
+
+.Testimonials img {
+  width: 200px;
+  /* height: 100px; */
+  border-radius: 50%;
+}
+.carousel-indicators [data-bs-target] {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: black;
+  color: white;
+}
+.cli span {
+  font-family: "Montserrat", serif;
+  font-weight: 900;
+  font-size: 30px;
+  line-height: 33px;
+  color: rgb(52, 52, 52);
+}
+.cli p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 24px;
+  color: rgb(116, 129, 130);
+}
+
+/* Testimonials SECTION */
+
+/* team SECTION */
+.team-img {
+  position: relative;
+  overflow: hidden;
+}
+.team-layer {
+  position: absolute;
+  inset: 100px;
+  background-color: rgba(255, 255, 255, 0.9);
+  opacity: 0;
+  transition: all 1s;
+  transform: rotateY(0deg); /* Initial state */
+}
+.team-img img {
+  transition: all 1s;
+}
+.team-card:hover .team-layer {
+  opacity: 1;
+  inset: 10px;
+  transform: rotateY(180deg);
+}
+.team-card:hover img {
+  transform: scale(1.2);
+}
+
+.team-layer div {
+  width: 40px;
+  height: 40px;
+  margin: 5px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 1);
+  cursor: pointer;
+  transition: 0.3s;
+  color: white;
+  font-size: 15px;
+  transform: rotateY(180deg);
+}
+.team-layer div:hover {
+  background-color: white;
+  border: solid 1px black;
+  color: black;
+}
+.name {
+  background-color: #5b5b5b;
+}
+.name h2 {
+  font-family: "Montserrat", serif;
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 28px;
+  color: rgb(255, 255, 255);
+}
+.name h3 {
+  font-family: "Montserrat", serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 22px;
+  color: rgb(255, 255, 255);
+}
+/* team SECTION */
+
+/* contact us SECTION */
+.iconn {
+  width: 70px;
+  height: 70px;
+  margin: 5px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: 0.3s;
+  color: black;
+  font-size: 15px;
+}
+.iconn:hover {
+  background-color: black;
+  color: white;
+  border: solid 1px black;
+}
+.contact-info h3 {
+  font-family: "Montserrat", serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 18px;
+  color: rgb(52, 52, 52);
+}
+.contact-info p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: rgb(116, 129, 130);
+}
+.form-control:focus {
+  background-color: #f7f7f7;
+  box-shadow: none;
+}
+.contact form input,
+.contact form textarea {
+  background-color: #f7f7f7;
+  /* border: none !important; */
+  /* outline: none !important; */
+  border: 0px solid rgb(116, 129, 130) !important;
+}
+
+.contact form button {
+  background-color: black;
+  color: white;
+  transition: all 0.5s;
+}
+.contact form button:hover {
+  background-color: white;
+  border: solid 1px black;
+  color: black;
+}
+/* contact us SECTION */
+
+footer {
+  background-color: #1c1c1c;
+}
+footer p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  /* line-height: 24px;   */
+  color: rgb(116, 129, 130);
+}
